@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /views/admin
+Disallow: /views/auth
+Disallow: /views/classroom
+Disallow: /views/errors

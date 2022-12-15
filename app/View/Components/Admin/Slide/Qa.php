@@ -1,0 +1,33 @@
+<?php
+
+namespace App\View\Components\Admin\Slide;
+
+use Illuminate\View\Component;
+
+class Qa extends Component
+{
+  public $slide;
+  public $slideCount;
+  public $qas;
+  /**
+   * Create a new component instance.
+   *
+   * @return void
+   */
+  public function __construct($slide, $slideCount, $qas)
+  {
+    $this->slide = $slide;
+    $this->slideCount = $slideCount;
+    $this->qas = $qas;
+  }
+
+  /**
+   * Get the view / contents that represent the component.
+   *
+   * @return \Illuminate\Contracts\View\View|\Closure|string
+   */
+  public function render()
+  {
+    return view('components.admin.slide.qa');
+  }
+}
